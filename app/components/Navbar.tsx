@@ -1,6 +1,6 @@
 'use client';
 
-import { ShoppingBag, Crown } from 'lucide-react';
+import { ShoppingBag, Crown, LayoutDashboard } from 'lucide-react';
 
 export default function Navbar() {
   return (
@@ -15,13 +15,21 @@ export default function Navbar() {
         </span>
       </div>
 
-      <div className="flex items-center space-x-4 shrink-0">
+      <div className="flex items-center space-x-3 shrink-0">
         <a
           href="#marketplace"
           className="text-xs text-gray-300 hover:text-[#D4AF37] transition-colors flex items-center gap-1.5 bg-[#1E1E1E] px-3 py-1.5 rounded border border-[#2A2A2A]"
         >
           <ShoppingBag className="w-3.5 h-3.5 text-[#D4AF37]" />
           <span>Marketplace</span>
+        </a>
+
+        <a
+          href="/admin"
+          className="text-xs text-[#D4AF37] hover:bg-[#D4AF37]/10 transition-colors flex items-center gap-1.5 bg-[#1E1E1E] px-3 py-1.5 rounded border border-[#D4AF37]/40 font-medium"
+        >
+          <LayoutDashboard className="w-3.5 h-3.5 text-[#D4AF37]" />
+          <span>Supplier Admin</span>
         </a>
       </div>
     </nav>

@@ -1,28 +1,43 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
+import type { Metadata } from 'next';
+import Script from 'next/script';
+import './globals.css';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import { Toaster } from 'react-hot-toast';
 
 export const metadata: Metadata = {
-  title: "AUREUS - Ultra-Luxury Concierge",
-  description: "B2B Procurement for Boutique Villas",
+  title: 'Kavaro Concierge | Luxury B2B Procurement',
+  description: 'Ultra-luxury provisioning platform for hospitality.',
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en" className="overflow-x-hidden w-full">
+    <html lang="en" className="dark scroll-smooth">
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        {/* PayHere JavaScript SDK */}
+        <Script
+          src="https://www.payhere.lk/lib/payhere.js"
+          strategy="beforeInteractive"
+        />
       </head>
-      <body
-        className={`${inter.className} antialiased overflow-x-hidden w-full max-w-full bg-[#0A0A0A] text-gray-100`}
-      >
+      <body className="bg-[#0A0A0A] text-white font-sans antialiased">
+        <Toaster
+          position="bottom-right"
+          toastOptions={{
+            style: {
+              background: '#121212',
+              color: '#fff',
+              border: '1px solid #2A2A2A',
+            },
+          }}
+        />
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
