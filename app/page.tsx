@@ -45,7 +45,7 @@ export default function HomePage() {
           <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 bg-[#D4AF37]/5 border border-[#D4AF37]/20 px-4 py-1.5 rounded-full mb-6">
             <Crown className="w-4 h-4 text-[#D4AF37]" />
             <span className="text-xs uppercase tracking-widest text-[#D4AF37] font-medium">
-              Ultra-Luxury B2B Procurement
+              Kavaro Concierge • Ultra-Luxury Procurement
             </span>
           </motion.div>
           
@@ -54,7 +54,7 @@ export default function HomePage() {
           </motion.h1>
           
           <motion.p variants={fadeInUp} className="max-w-3xl mx-auto text-lg md:text-xl text-neutral-400 mb-10 leading-relaxed">
-            Instant, high-end procurement for world-class villas. Zero manual quoting, automated matching, and instant global payments.
+            Welcome to Kavaro Concierge. Instant, high-end procurement for world-class villas. Zero manual quoting, automated matching, and instant global payments.
           </motion.p>
           
           <motion.div variants={fadeInUp} className="flex gap-4 justify-center">
@@ -115,10 +115,10 @@ export default function HomePage() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-white tracking-tight mb-4">
-              The Luxury B2B Marketplace.
+              Kavaro B2B Marketplace.
             </h2>
             <p className="text-lg text-neutral-400 max-w-2xl mx-auto">
-              Direct access to the world's finest ingredients, spirits, and amenities.
+              Direct access to the world's finest ingredients, spirits, and luxury amenities for Sri Lankan hospitality.
             </p>
           </motion.div>
           

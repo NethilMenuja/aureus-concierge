@@ -8,7 +8,7 @@ export default function Navbar() {
       <div className="flex items-center space-x-2 min-w-0">
         <Crown className="w-5 h-5 text-[#D4AF37] shrink-0" />
         <span className="font-serif font-bold text-base sm:text-xl text-white tracking-wider truncate">
-          AUREUS
+          KAVARO
         </span>
         <span className="text-[10px] bg-[#D4AF37]/10 text-[#D4AF37] border border-[#D4AF37]/30 px-1.5 py-0.5 rounded uppercase hidden sm:inline-block shrink-0">
           Concierge B2B
